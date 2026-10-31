@@ -1,0 +1,10 @@
+# Runtime and test dependencies for the published ARF V2 workflow.
+# Versions match the archived experiment environment; pytest is used only to
+# run the repository test suite and was not recorded as an experiment runtime.
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.14.1
+scikit-learn==1.7.2
+lightgbm==4.7.0
+matplotlib==3.10.9
+pytest

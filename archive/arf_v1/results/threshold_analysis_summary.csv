@@ -1,0 +1,2 @@
+sample_count,positive_count,positive_rate,oof_auroc,oof_average_precision,brier_score,mean_predicted_probability,youden_threshold,maximum_f1_threshold
+9921,960,0.09676443906864228,0.7774956524569431,0.3155265372224843,0.08230593541992,0.14580683954751408,0.1737689662482596,0.2442551739552506

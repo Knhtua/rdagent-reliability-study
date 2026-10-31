@@ -1,0 +1,11 @@
+Python: 3.10.20 (main, Jun 11 2026, 15:12:11) [GCC 14.3.0]
+Platform: Linux-7.0.0-28-generic-aarch64-with-glibc2.39
+Architecture: aarch64
+numpy: 2.2.6
+pandas: 2.3.3
+scipy: 1.14.1
+scikit-learn: 1.7.2
+lightgbm: 4.7.0
+               total        used        free      shared  buff/cache   available
+Mem:           5.8Gi       1.1Gi       2.2Gi        48Mi       2.6Gi       4.6Gi
+Swap:          3.8Gi          0B       3.8Gi

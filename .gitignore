@@ -1,0 +1,46 @@
+# API keys and secrets
+.env
+.env.*
+*.key
+*.pem
+
+# Raw and processed data
+data/raw/
+data/processed/
+*.npz
+*.npy
+*.pth
+*.pkl
+
+# Logs and caches
+results/logs/*
+!results/logs/.gitkeep
+cache/
+log/
+pickle_cache/
+*.pyc
+
+# Local environments
+.venv/
+venv/
+conda-env/
+.DS_Store
+
+# RD-Agent temporary files
+git_ignore_folder/
+
+# Temporary files
+*.tmp
+*.bak
+__pycache__/
+
+# Individual-level research outputs
+results/tables/*oof_predictions.csv
+results/tables/*oof.csv
+results/tables/*error_cases.csv
+
+# Large resampling distributions
+results/tables/*bootstrap_differences.csv
+
+# Sample-level split assignments
+data/splits/*.csv

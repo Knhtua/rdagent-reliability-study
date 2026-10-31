@@ -1,0 +1,68 @@
+{
+  "experiment_name": "arf_nested_cv_v1",
+  "task": "binary_classification",
+  "primary_metric": "auroc",
+  "secondary_metrics": [
+    "average_precision",
+    "brier_score"
+  ],
+  "feature_set": "12h_sum",
+  "outer_cv": {
+    "type": "precomputed_stratified_kfold",
+    "n_splits": 5,
+    "seed": 42,
+    "split_file": "data/splits/arf_outer_folds_seed42.csv"
+  },
+  "inner_cv": {
+    "type": "stratified_kfold",
+    "n_splits": 3,
+    "shuffle": true,
+    "seed": 2026
+  },
+  "logistic_regression": {
+    "solver": "liblinear",
+    "class_weight": "balanced",
+    "max_iter": 2000,
+    "c_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ]
+  },
+  "lightgbm": {
+    "objective": "binary",
+    "metric": "auc",
+    "learning_rate": 0.02,
+    "num_boost_round": 3000,
+    "early_stopping_rounds": 100,
+    "num_threads": 4,
+    "parameter_grid": [
+      {
+        "num_leaves": 31,
+        "min_data_in_leaf": 50,
+        "feature_fraction": 0.8,
+        "bagging_fraction": 0.8
+      },
+      {
+        "num_leaves": 31,
+        "min_data_in_leaf": 100,
+        "feature_fraction": 0.8,
+        "bagging_fraction": 0.8
+      },
+      {
+        "num_leaves": 63,
+        "min_data_in_leaf": 50,
+        "feature_fraction": 0.8,
+        "bagging_fraction": 0.8
+      },
+      {
+        "num_leaves": 63,
+        "min_data_in_leaf": 100,
+        "feature_fraction": 0.8,
+        "bagging_fraction": 0.8
+      }
+    ]
+  },
+  "random_seed": 42
+}

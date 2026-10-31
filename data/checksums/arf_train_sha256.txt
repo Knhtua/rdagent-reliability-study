@@ -1,0 +1,2 @@
+00b552e358612a18f972c4aa6d7ce1af680bf16ddb14862cd0de1dec01d8b2c0  git_ignore_folder/ds_data/arf-12-hours-prediction-task/train/X.npz
+3ecdbe7d72c2b3e75b11facde90a8974b4eed7c1d690623ae17fc2c421db27fd  git_ignore_folder/ds_data/arf-12-hours-prediction-task/train/ARF_12h.csv
